@@ -1,0 +1,40 @@
+import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+class Studentdet implements Collection <Studentdet>
+{
+
+	String name;
+	int age;
+	String city;
+	Studentdet(String name,int age,String city)
+	{
+	this.name=name;
+	this.age=age;
+	this.city=city;
+	}
+	public String tostring()
+	{
+		return "name"+name+",city="+city;
+	}
+		
+	
+	
+	public class CollectionObj
+	{
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		ArrayList ar=new ArrayList();
+		Studentdet s1=new Studentdet("lkjh",34,"kljhg");
+		Studentdet s2=new Studentdet("jhg",43,"kjhg");
+		ar.add(s1);
+		ar.add(s2);
+		System.out.println(ar);
+		Collection.sort(ar);
+		System.out.println(ar);
+
+	}
+
+}

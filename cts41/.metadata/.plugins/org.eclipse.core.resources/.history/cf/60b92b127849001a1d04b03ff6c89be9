@@ -1,0 +1,29 @@
+import java.util.*;
+
+ interface Mathematics
+{
+	public static int add(int a,int b)
+	{
+		return a+b;
+	}
+	
+}
+public class ThreadLamda 
+{
+	public static void main(String[] args)
+			{
+		Runnable r=()->
+		
+			Mathematics.add(2,4);
+			
+			System.out.println();
+			Thread t=new Thread (r);
+		    t.start();
+		
+			}
+		
+			
+			
+	
+
+}

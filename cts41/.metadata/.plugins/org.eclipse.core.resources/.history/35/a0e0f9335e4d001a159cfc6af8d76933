@@ -1,0 +1,17 @@
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class Payroll {
+	public static void main(String[] args)
+	{
+		HashMap<Integer,String>p= new HashMap<Integer,String>();
+		p.put(101, "Accountant");
+		p.put(102,"Manager");
+		p.put(103, "clerk");
+		p.put(104, "Accountant");
+		p.put(105,"Manager");
+		
+		HashMap<Integer,Integer>q= new HashMap<Integer,Integer>();
+	}
+
+}

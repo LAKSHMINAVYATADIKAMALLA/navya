@@ -1,0 +1,16 @@
+import java.util.function.Predicate;
+
+public class PredicateExOdd 
+{
+
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+		Predicate<Integer> p1=(a,b)->(a+b)%2==0;
+		ystem.out.println(bi.test(10, 2));
+		System.out.println(bi.test(1, 1));
+		System.out.println(bi.test(1, 2));
+
+	}
+
+}

@@ -1,0 +1,56 @@
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+import java.util.Set;
+class Details
+{
+int id;
+String desg;
+int sal;
+public Details( int id,String desg, int sal)
+{
+super();
+// TODO Auto-generated constructor stub
+this.id=id;
+this.desg=desg;
+this.sal=sal;
+}
+}
+
+
+
+public class Payroll {
+	
+	
+	public static void main(String[] args)
+	{
+		
+		Scanner sc=new Scanner(System.in);
+		HashMap<Integer,String> h1=new HashMap<Integer,String>();
+		System.out.println("Enter Number of Entries");
+		int n=sc.nextInt();
+		for(int i=0;i<n;i++)
+		{
+			System.out.println("Enter Employee id");
+			int k1=sc.nextInt();
+			System.out.println("Enter Designation of Employee");
+			String v1=sc.nextLine();
+			h1.put(k1, v1);
+		}
+			HashMap<Integer,Integer> h2=new HashMap<Integer,Integer>();
+			System.out.println("Enter Number of Entries");
+			int m=sc.nextInt();
+			for(int i=0;i<m;i++)
+		{
+			System.out.println("Enter Employee id");
+			int k2=sc.nextInt();
+			System.out.println("Enter Salary of Employee");
+			Integer v2=sc.nextInt();
+			h2.put(k2, v2);
+		}
+
+
+
+	}
+
+}

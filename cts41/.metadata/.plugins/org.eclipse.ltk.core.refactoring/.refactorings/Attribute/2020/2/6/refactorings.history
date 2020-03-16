@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Attribute/WebContent/Index1html.html&apos; to &apos;Index1.html&apos;" description="Rename resource &apos;Index1html.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/Index1html.html" name="Index1.html" stamp="1580989071139" updateReferences="true"/>
+</session>

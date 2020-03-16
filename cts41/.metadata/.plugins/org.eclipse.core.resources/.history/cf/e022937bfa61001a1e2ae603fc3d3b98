@@ -1,0 +1,26 @@
+package practicee;
+
+public class MiddleString {
+	public static void main(String args[])
+	{
+		try
+		{
+			System.out.println("Try Block");
+			
+		}
+		finally
+		{
+			System.out.println("finally Block");
+		}
+	}
+}
+	/*private static void display()
+	{
+		Syaout("Display()");
+	}
+	private static void show()
+	{
+		display()
+	}
+
+}*/

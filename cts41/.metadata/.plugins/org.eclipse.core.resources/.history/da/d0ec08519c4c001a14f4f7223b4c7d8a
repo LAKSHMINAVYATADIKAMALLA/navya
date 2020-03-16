@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Transactions</title>
+</head>
+<body>
+<form action="http://Localhost:8004/TransactionJsp/Login.html">
+
+name:<input type="text" name="name"><br>
+password:<input type="password" name="Password"/><br>
+<input type="submit" value="login"></form>
+
+</body>
+</html>

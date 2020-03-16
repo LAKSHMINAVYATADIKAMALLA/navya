@@ -1,0 +1,54 @@
+import java.util.*;
+import java.util.TreeSet;
+import java.util.stream.Collectors;
+
+class Studentdet 
+{
+
+	String name;
+	String age;
+	String city;
+	public Studentdet(String name,String
+			age,String city)
+	{
+		super();
+	this.name=name;
+	this.age=age;
+	this.city=city;
+	}
+	public String tostring()
+	{
+		return "name"+name+",city="+city+",age="+age;
+	}
+	public int compareTo(Studentdet studentdet)
+	{
+		if(age.compareTo(studentdet.age)<0)
+			return 1;
+		else if(age.compareTo(studentdet.age)>0)
+			return -1;
+		else
+			return 0;
+		
+	}
+}
+		
+	
+	
+	public class CollectionObj
+	{
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		
+		
+		TreeSet t=new TreeSet();
+		Studentdet s1=new Studentdet("lkjh","34","kljhg");
+		Studentdet s2=new Studentdet("jhg","43","kjhg");
+		t.add(s1);
+		t.add(s2);
+		System.out.println(t);
+		
+	}
+
+}

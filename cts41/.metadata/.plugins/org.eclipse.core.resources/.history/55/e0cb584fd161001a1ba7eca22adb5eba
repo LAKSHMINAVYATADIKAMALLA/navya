@@ -1,0 +1,17 @@
+package unittesting;
+
+import org.junit.jupiter.api.Test;
+
+public class JunitTestClass 
+{
+	@Test
+	public void test1()
+	{
+		System.out.println("this is unittesting");
+	}
+	public void test2()
+	{
+		System.out.println("this is test case 2...");
+	}
+
+}

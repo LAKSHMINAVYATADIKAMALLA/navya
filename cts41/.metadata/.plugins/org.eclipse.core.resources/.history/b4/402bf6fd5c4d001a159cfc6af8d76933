@@ -1,0 +1,9 @@
+import java.util.HashMap;
+
+public class Payroll {
+	public static void main(String[] args)
+	{
+		HashMap<Integer,String>stats= new HashMap<Integer,String>();
+	}
+
+}

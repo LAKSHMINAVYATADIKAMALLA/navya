@@ -1,0 +1,40 @@
+import java.util.*;
+public class MapEx3
+{
+	public static void main(String[] args)
+	{
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter number of enteries..");
+		int n=sc.nextInt();
+		HashMap<Integer,Integer>h1= new HashMap<Integer,Integer>();
+		for(int i=0;i<n;i++)
+		{
+			h1.put(sc.nextInt(),s.next());
+			System.out.println("enter the year");
+			int year=sc.nextInt();
+			System.out.println("enter the number of admissions..");
+			int noa=sc.nextInt();
+			h1.put(year, noa);
+		}
+		Set Keys=h1.entrySet();
+		Iterator itr=Keys.iterator();
+		int max=0;
+		int tyear=0;
+		int temp=0;
+		while(itr.hasNext())
+		{
+			Map.Entry entry=(Map.Entry)itr.next();
+		    temp=(Integer) entry.getValue();
+			if(temp>max)
+			{
+				max=temp;
+				tyear =(Integer)entry.getKey();
+			}
+		
+	    }
+		System.out.println("the details of maximum admission are: ");
+		System.out.println("Year:"+tyear+"number of admission are"+temp);
+
+}
+}

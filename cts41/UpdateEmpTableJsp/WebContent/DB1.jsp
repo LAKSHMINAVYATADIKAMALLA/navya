@@ -1,0 +1,57 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"
+     import="java.sql.*"
+%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<%
+int n=Integer.parseInt(request.getParameter("eno"));
+DriverManager.registerDriver(new com.mysql.cj.jdbc.Driver());
+Connection connection=DriverManager.getConnection("jdbc:mysql://localhost:3306/cts","root","root");
+String query="select * from emp where empno=?";
+PreparedStatement pst=connection.prepareStatement(query);
+pst.setInt(1,n);
+ResultSet rs=pst.executeQuery();
+if(rs.next())
+{
+out.print("<html><body>");
+out.print("<form action='DB2.jsp'>");
+out.print("Employee No is:");
+out.print("<input type='text' name='enum' value='"+rs.getInt(1)+"'>");
+out.println("<br>Employee name is:");
+out.print("<input type='text' name='enam' value='"+rs.getString(2)+"'>");
+out.println("<br>Employee job is:");
+out.print("<input type='text' name='ejob' value='"+rs.getString(3)+"'>");
+out.println("<br>Employee mgr is:");
+out.print("<input type='text' name='emgr' value='"+rs.getString(4)+"'>");
+out.println("<br>Employee hiredate is:");
+out.print("<input type='text' name='ehd' value='"+rs.getString(5)+"'>");
+out.println("<br>Employee sal is:");
+out.print("<input type='text' name='esal' value='"+rs.getString(6)+"'>");
+out.println("<br>Employee com is:");
+out.print("<input type='text' name='ecom' value='"+rs.getString(7)+"'>");
+out.println("<br>Employee deptno is:");
+out.print("<input type='text' name='edept' value='"+rs.getString(8)+"'>");
+out.print("<br><br>Employee Id is:");
+out.print("<input type='text' name='enumber' value='"+rs.getInt(1)+"'>");
+out.println("<br><input type='submit' value='update'>");
+out.print("</form>");
+out.print("</body></html>");
+}
+else
+{
+System.out.println("Invalid id");
+}
+rs.close();
+pst.close();
+connection.close();
+%>
+
+</body>
+</html>

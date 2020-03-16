@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;hibernate.cfg.xml&apos; to &apos;mavenpkg.Annotation.Employee.java&apos;&#x0D;&#x0A;- Original project: &apos;Annotation&apos;&#x0D;&#x0A;- Destination element: &apos;mavenpkg.Annotation.Employee.java&apos;&#x0D;&#x0A;- Original element: &apos;hibernate.cfg.xml&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move file" destination="/src\/main\/java&lt;mavenpkg.Annotation{Employee.java" element1="hibernate.cfg.xml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1582697183850" units="0" version="1.0"/>
+</session>

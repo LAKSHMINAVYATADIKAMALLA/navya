@@ -1,0 +1,8 @@
+1582180313997	Move 'QBXml.xml' to 'src'
+1582181335863	Move 'QBMap.xml' to 'src'
+1582190692180	Move 'SetterBean.xml' to 'src'
+1582190695934	Move 'spring-bean.xml' to 'src'
+1582260301959	Move 'applicationConf.xml' to 'src'
+1582260307668	Move 'InheritBean.xml' to 'src'
+1582260309925	Move 'Collection.xml' to 'src'
+1582260891961	Rename package 'Config'

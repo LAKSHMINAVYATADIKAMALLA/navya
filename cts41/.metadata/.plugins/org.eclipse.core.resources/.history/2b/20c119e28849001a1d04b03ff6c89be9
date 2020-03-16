@@ -1,0 +1,42 @@
+import java.util.ArrayList;
+import java.util.Collection;
+class Students implements Collection <Student>
+{
+
+	String name;
+	int age;
+	String city;
+	Students(String name,int age,String city)
+	{
+	this.name=name;
+	this.age=age;
+	this.city=city;
+	}
+	public String tostring()
+	{
+		return "name"+name+",city="+city;
+	}
+		return name="+name+",age="+age+",city="+city";
+		
+	}
+	
+		//return "htno"+htno+",name="+name;
+		
+	
+	public class CollectionObj
+	{
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		ArrayList ar=new ArrayList();
+		Student s1=new Student("lkjh",34,"kljhg");
+		Student s2=new Student("jhg",43,"kjhg");
+		ar.add(s1);
+		ar.add(s2);
+		System.out.println(ar);
+		Collections.sort(ar);
+
+	}
+
+}

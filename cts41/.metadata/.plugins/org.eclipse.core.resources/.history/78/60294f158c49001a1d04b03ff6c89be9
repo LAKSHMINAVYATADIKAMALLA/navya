@@ -1,0 +1,40 @@
+import java.util.*;
+
+class Studentdet 
+{
+
+	String name;
+	int age;
+	String city;
+	Studentdet(String name,int age,String city)
+	{
+	this.name=name;
+	this.age=age;
+	this.city=city;
+	}
+	public String tostring()
+	{
+		return "name"+name+",city="+city+",age="+age;
+	}
+}
+		
+	
+	
+	public class CollectionObj
+	{
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		
+		
+		TreeSet t=new TreeSet();
+		Studentdet s1=new Studentdet("lkjh",34,"kljhg");
+		Studentdet s2=new Studentdet("jhg",43,"kjhg");
+		t.add(s1);
+		t.add(s2);
+		System.out.println(t);
+		
+	}
+
+}
